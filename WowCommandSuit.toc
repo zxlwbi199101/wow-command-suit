@@ -1,0 +1,7 @@
+## Interface: 11305
+## Title: WoW-Command-Suit
+## Notes-zhCN: 魔兽世界命令行工具集
+## Author: 史努比的暴走
+utils/Thread.lua
+wcs_destroy.lua
+wcs_auction.lua
