@@ -69,7 +69,7 @@ local function loop()
         })
       end
 
-      if (curNum < 50) then
+      if (curNum < 50 or 50 * (page + 1) == totalNum) then
         status.querying = false
         status.callback(response)
         break

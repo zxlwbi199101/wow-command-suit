@@ -7,3 +7,4 @@ utils/queryAuction.lua
 utils/utils.lua
 wcs_price.lua
 wcs_stone.lua
+wcs_destroy.lua

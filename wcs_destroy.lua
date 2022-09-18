@@ -28,10 +28,18 @@ local function destroy()
 
     '沉重的箱子',
     '锁住的铁箍箱',
+
+    '灵魂碎片',
   };
+
+  count = 0
 
   for i = 0, 4, 1 do
     for j = 1, 18, 1 do
+      if count == 5 then
+        break;
+      end
+
       local id = select(10, GetContainerItemInfo(i, j));
 
       if (id ~= nil) then
@@ -40,6 +48,7 @@ local function destroy()
         for k, v in pairs(items) do
           if name == v then
             print(v);
+            count = count + 1
             PickupContainerItem(i, j);
             DeleteCursorItem();
             break;
